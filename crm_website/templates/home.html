@@ -14,16 +14,14 @@
     <form method="POST" action="{% url 'home' %}">
         <!--A token required to be generated to ensure form security-->
         {% csrf_token %}
-        <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" name="user_name" placeholder="Enter your Username" required>
-            </div>
-            <div class="mb-3">
-              <input type="password" class="form-control" name="password" placeholder="Enter password" required>
-            </div>
-            <br/>
-            <button type="submit" class="btn btn-secondary">Login</button>
-        </form>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="user_name" placeholder="Enter your Username" required>
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" name="password" placeholder="Enter password" required>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-secondary">Login</button>
 
     </form>
 
